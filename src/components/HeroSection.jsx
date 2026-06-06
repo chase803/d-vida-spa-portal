@@ -10,8 +10,19 @@ export default function HeroSection({ heroImage }) {
         <img
           src={heroImage}
           alt="D'Vida Spa"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover animate-kenburns"
         />
+        <style>{`
+          @keyframes kenburns {
+            0%   { transform: scale(1)    translateX(0)    translateY(0); }
+            50%  { transform: scale(1.08) translateX(-1%)  translateY(-1%); }
+            100% { transform: scale(1)    translateX(0)    translateY(0); }
+          }
+          .animate-kenburns {
+            animation: kenburns 20s ease-in-out infinite;
+            transform-origin: center center;
+          }
+        `}</style>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50" />
       </div>
 
