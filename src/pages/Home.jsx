@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#F9F9F7]">
       <Navbar />
-      <HeroSection heroImage={IMAGES.hero} />
+      <HeroSection />
       <StatsTicker />
       <AboutSection interiorImage={IMAGES.interior} portraitImage={IMAGES.portrait} />
       <ServicesSection images={IMAGES.services} />

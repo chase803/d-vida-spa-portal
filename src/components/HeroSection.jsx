@@ -2,14 +2,19 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
-export default function HeroSection({ heroImage }) {
+const VIDEO_URL = 'https://media.base44.com/videos/public/6a2442c8cdd388c1867c7a33/ba9c02e57_dvida_-_homepage_video-1080p.mp4';
+
+export default function HeroSection() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Luxury serum drop refracting light in a clinical spa setting"
+        <video
+          src={VIDEO_URL}
+          autoPlay
+          muted
+          loop
+          playsInline
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50" />
@@ -28,7 +33,7 @@ export default function HeroSection({ heroImage }) {
             href={s.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white/50 text-[10px] tracking-[0.3em] font-body uppercase hover:text-primary transition-colors duration-300 writing-vertical"
+            className="text-white/50 text-[10px] tracking-[0.3em] font-body uppercase hover:text-primary transition-colors duration-300"
             style={{ writingMode: 'vertical-rl' }}
           >
             {s.label}
