@@ -140,6 +140,35 @@ export default function TreatmentModal({ treatment, onClose }) {
             )}
           </div>
 
+          {/* Patient Results */}
+          {treatment.results && treatment.results.length > 0 && (
+            <div>
+              <h3 className="font-display text-xl font-light text-[#1A1A1A] mb-4">Patient Results</h3>
+              <div className="grid grid-cols-2 gap-3">
+                {treatment.results.map((r, i) => (
+                  <div key={i} className="relative overflow-hidden group">
+                    <img
+                      src={r.before}
+                      alt={r.label}
+                      className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-[#1A1A1A]/70 px-3 py-2">
+                      <p className="text-[#F9F9F7] text-[9px] tracking-[0.25em] uppercase font-body">{r.label}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <a
+                href="https://dvidaspa.com/before-and-after/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 text-primary text-[10px] tracking-[0.3em] uppercase font-body border-b border-primary pb-0.5 hover:opacity-70 transition-opacity"
+              >
+                View Full Results Gallery
+              </a>
+            </div>
+          )}
+
           {/* CTA */}
           <div className="px-8 pb-8">
             <a

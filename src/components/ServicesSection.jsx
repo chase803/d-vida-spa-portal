@@ -7,6 +7,10 @@ const SERVICES = [
     title: 'Botox & Fillers',
     subtitle: 'Injectables',
     tagline: 'The Wrinkle Whisperer',
+    results: [
+      { before: 'https://dvidaspa.com/wp-content/uploads/2025/01/Dvida-Spa-BA-Botox-1a.jpeg', label: 'Botox — Patient 1' },
+      { before: 'https://dvidaspa.com/wp-content/uploads/2025/01/Dvida-Spa-BA-Botox-2a.jpeg', label: 'Botox — Patient 2' },
+    ],
     description: 'Embrace your wrinkle-free era. At Dvida Spa, we diminish fine lines and refresh your look by merging expert techniques with renowned injectable wrinkle relaxers like Botox. A smoother, youthful complexion awaits. It\'s not just a procedure; it\'s an investment in timeless beauty, ensuring you wear your age with pride and poise.',
     link: 'https://dvidaspa.com/treatment/botox-in-chicago/',
     glance: [
@@ -40,6 +44,11 @@ const SERVICES = [
     title: 'Skin Tightening',
     subtitle: 'Body Contouring',
     tagline: 'Lift, Tighten & Sculpt',
+    results: [
+      { before: 'https://dvidaspa.com/wp-content/uploads/2025/01/Dvida-Spa-BA-Coolsculpting-1-768x341.jpeg', label: 'CoolSculpting — Patient 1' },
+      { before: 'https://dvidaspa.com/wp-content/uploads/2025/01/Dvida-Spa-BA-Coolsculpting-2-768x628.jpeg', label: 'CoolSculpting — Patient 2' },
+      { before: 'https://dvidaspa.com/wp-content/uploads/2025/01/Dvida-Spa-BA-Dysport-1a-768x311.jpeg', label: 'Dysport — Patient 1' },
+    ],
     description: 'Advanced radiofrequency, ultrasound, and laser technologies to lift, tighten, and sculpt your skin without surgery. Our team of experts uses the latest technology to deliver visible, lasting results tailored to your body\'s unique needs.',
     link: 'https://dvidaspa.com/treatment-category/skin-tightening/',
     glance: [
@@ -79,6 +88,10 @@ const SERVICES = [
     title: 'IV Therapy',
     subtitle: 'Wellness',
     tagline: 'Nourish & Energize Your Body',
+    results: [
+      { before: 'https://dvidaspa.com/wp-content/uploads/2024/10/Dvida-Spa-IV-therapy-0404-1024x682.jpg', label: 'IV Therapy Session' },
+      { before: 'https://dvidaspa.com/wp-content/uploads/2024/10/Dvida-Spa-IV-therapy-0448-682x1024.jpg', label: 'IV Therapy Treatment' },
+    ],
     description: 'At Dvida Spa, we believe that looking good and feeling good are equally important. The foods we eat do not provide the same nutrients they did 50 years ago, so our bodies often lack what they need to function well. With IV therapy, we deliver nutrients directly to your bloodstream for 100% absorption so you can live every day at 100%.',
     link: 'https://dvidaspa.com/treatment/iv-therapy-in-chicago/',
     glance: [
@@ -112,6 +125,10 @@ const SERVICES = [
     title: 'Hair Restoration',
     subtitle: 'Regenerative',
     tagline: 'Restore Your Luscious Locks',
+    results: [
+      { before: 'https://dvidaspa.com/wp-content/uploads/2025/01/Dvida-Spa-BA-PRP-Hair-Restoration-1.jpeg', label: 'PRP Hair Restoration' },
+      { before: 'https://dvidaspa.com/wp-content/uploads/2025/01/Dvida-Spa-BA-Non-Surgical-Hair-Restoration-1a.jpeg', label: 'Non-Surgical Hair Restoration' },
+    ],
     description: 'At Dvida Spa, we offer multiple options for hair restoration. Hair loss impacts an estimated 80 million people in the U.S. today, affecting both men and women. Our team provides personalized, non-surgical solutions to slow hair loss, strengthen existing hair, and encourage natural regrowth using the latest technologies.',
     link: 'https://dvidaspa.com/treatment/hair-restoration-in-chicago/',
     glance: [
