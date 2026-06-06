@@ -2,19 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
-const VIDEO_URL = 'https://media.base44.com/videos/public/6a2442c8cdd388c1867c7a33/ba9c02e57_dvida_-_homepage_video-1080p.mp4';
-
-export default function HeroSection() {
+export default function HeroSection({ heroImage }) {
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Background Video */}
+      {/* Background Image */}
       <div className="absolute inset-0">
-        <video
-          src={VIDEO_URL}
-          autoPlay
-          muted
-          loop
-          playsInline
+        <img
+          src={heroImage}
+          alt="D'Vida Spa"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50" />

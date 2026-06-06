@@ -6,6 +6,7 @@ import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
 import LocationsSection from '../components/LocationsSection';
 import FooterSection from '../components/FooterSection';
+import VideoSection from '../components/VideoSection';
 
 const IMAGES = {
   hero: 'https://media.base44.com/images/public/6a2442c8cdd388c1867c7a33/e8fa2c754_generated_fae6f2c0.png',
@@ -23,8 +24,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#F9F9F7]">
       <Navbar />
-      <HeroSection />
+      <HeroSection heroImage={IMAGES.hero} />
       <StatsTicker />
+      <VideoSection />
       <AboutSection interiorImage={IMAGES.interior} portraitImage={IMAGES.portrait} />
       <ServicesSection images={IMAGES.services} />
       <LocationsSection />
