@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import BlogPostModal from './BlogPostModal';
 
 const BLOG_POSTS = [
@@ -309,14 +310,12 @@ export default function BlogSection() {
                 From Our <span className="italic">Blog</span>
               </h2>
             </div>
-            <a
-              href="https://dvidaspa.com/category/botox-tips/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/blog"
               className="self-start md:self-auto text-[#1A1A1A] text-[10px] tracking-[0.3em] uppercase font-body border-b border-[#1A1A1A]/40 pb-0.5 hover:border-primary hover:text-primary transition-colors duration-300 whitespace-nowrap"
             >
               View All Articles
-            </a>
+            </Link>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
