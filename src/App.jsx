@@ -9,6 +9,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import Gallery from './pages/Gallery';
+import MensTreatments from './pages/MensTreatments';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -40,6 +41,7 @@ const AuthenticatedApp = () => {
       <Route path="/" element={<Home />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/gallery" element={<Gallery />} />
+      <Route path="/mens-treatments" element={<MensTreatments />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
