@@ -9,6 +9,7 @@ import FooterSection from '../components/FooterSection';
 import BlogSection from '../components/BlogSection';
 import VideoSection from '../components/VideoSection';
 import TeamSection from '../components/TeamSection';
+import ShopSection from '../components/ShopSection';
 
 const IMAGES = {
   hero: 'https://media.base44.com/images/public/6a2442c8cdd388c1867c7a33/e8fa2c754_generated_fae6f2c0.png',
@@ -32,6 +33,7 @@ export default function Home() {
       <AboutSection interiorImage={IMAGES.interior} portraitImage={IMAGES.portrait} />
       <ServicesSection images={IMAGES.services} />
       <TeamSection />
+      <ShopSection />
       <BlogSection />
       <LocationsSection />
       <FooterSection />
