@@ -138,7 +138,7 @@ export default function HeroSection({ heroImage }) {
           href="https://dvidaspa.com/treatment-plan-builder-choosing-locations/"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-10 px-10 py-4 border border-primary text-primary text-xs tracking-[0.3em] uppercase font-body hover:bg-primary hover:text-primary-foreground transition-all duration-500"
+          className="mt-10 px-10 py-4 border border-primary text-primary text-xs tracking-[0.3em] uppercase font-body font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-500"
         >
           Build Your Treatment Plan
         </motion.a>
