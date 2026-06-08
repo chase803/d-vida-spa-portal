@@ -6,6 +6,7 @@ import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
 import LocationsSection from '../components/LocationsSection';
 import FooterSection from '../components/FooterSection';
+import BlogSection from '../components/BlogSection';
 import VideoSection from '../components/VideoSection';
 
 const IMAGES = {
@@ -29,6 +30,7 @@ export default function Home() {
       <VideoSection />
       <AboutSection interiorImage={IMAGES.interior} portraitImage={IMAGES.portrait} />
       <ServicesSection images={IMAGES.services} />
+      <BlogSection />
       <LocationsSection />
       <FooterSection />
     </div>
