@@ -126,7 +126,7 @@ export default function HeroSection({ heroImage }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
-          className="mt-4 text-white/55 font-body text-sm md:text-base tracking-[0.4em] uppercase"
+          className="mt-4 text-white font-body text-sm md:text-base tracking-[0.4em] uppercase font-semibold"
         >
           Feel Divine
         </motion.p>
